@@ -181,3 +181,42 @@ Body {
     margin-top: 10px;
 }
 
+/* --- TARJETA PERFIL ROSA PASTEL --- */
+.profile-card-pink {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    /* Rosa pastel muy suave */
+    background: rgba(255, 182, 193, 0.4); 
+    /* Borde rosa pastel sólido, no neón */
+    border: 2px solid rgba(255, 182, 193, 0.8);
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.avatar-border {
+    padding: 0; /* Quitamos el espacio extra */
+    display: inline-block;
+    border-radius: 50%;
+    border: none; /* Eliminamos cualquier línea extra */
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    border: none; /* Aseguramos que no tenga borde la foto */
+    box-shadow: none; /* Quitamos sombras neón */
+}
+
+.tagline {
+    color: #e09fba; /* Un tono de rosa más sólido y menos brillante */
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
