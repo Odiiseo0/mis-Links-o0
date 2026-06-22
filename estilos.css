@@ -40,11 +40,11 @@ body {
 
 /* Botones con efecto Glassmorphism */
 .boton {
-    display: flex; /* Cambiado a flex para alinear imagen y texto */
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.2); /* Transparencia */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     color: white;
     padding: 12px;
     margin: 12px 0;
@@ -61,13 +61,13 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Estilo para las miniaturas dentro de los botones */
+/* Estilo para las miniaturas redondas dentro de los botones */
 .icono-boton {
     width: 30px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 50%; /* Cambiado a 50% para que sean redondas */
     margin-right: 15px;
-    object-fit: cover; /* Asegura que la foto no se deforme */
+    object-fit: cover;
 }
 
 .separador {
