@@ -96,3 +96,15 @@ body {
 .redes-sociales a img:hover {
     transform: scale(1.2); /* Efecto al pasar el mouse */
 }
+
+/* Definimos la animación */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aplicamos la animación al contenedor */
+.contenedor {
+    animation: fadeIn 2s ease-in;
+}
+
