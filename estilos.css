@@ -21,12 +21,13 @@ body {
 }
 
 .foto-perfil {
-    width: 150px;
-    height: 150px;
+    width: 100px;  /* Reducido de 150px a 100px para que sea más pequeña */
+    height: 100px; /* Igual que el width para mantener el círculo */
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 3px solid white;
+    border: none;  /* Esto elimina el marco blanco que tenías */
 }
+
 
 .nombre-usuario {
     color: white;
