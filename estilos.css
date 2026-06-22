@@ -1,16 +1,17 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 40px 0; /* Agregamos espacio arriba y abajo */
     font-family: 'Courier New', Courier, monospace;
     background-image: url('IMG_4532.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    /* Cambiamos el centrado forzado por un diseño flexible */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Alinea todo desde arriba hacia abajo */
 }
 
 .contenedor {
@@ -38,7 +39,6 @@ body {
     font-weight: bold;
 }
 
-/* Botones con efecto Glassmorphism */
 .boton {
     display: flex;
     align-items: center;
@@ -61,11 +61,10 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Estilo para las miniaturas redondas dentro de los botones */
 .icono-boton {
     width: 30px;
     height: 30px;
-    border-radius: 50%; /* Cambiado a 50% para que sean redondas */
+    border-radius: 50%;
     margin-right: 15px;
     object-fit: cover;
 }
