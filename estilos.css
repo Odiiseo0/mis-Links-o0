@@ -1,52 +1,209 @@
+Estilo 
+
+/* Variables de paleta de colores (Rosa Aesthetic) */
 :root {
-    --neon-pink: #ff00ff;
-    --neon-blue: #00ffff;
+    --bg-gradient: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+    --card-bg: rgba(255, 255, 255, 0.75);
+    --text-main: #4a3b42;
+    --accent-pink: #ff85a1;
+    --accent-hover: #ff477e;
+    --btn-text: #ffffff;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', monospace; }
+/* Reseteo básico de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Fondo de la página centrado completo */
 body {
-    background: linear-gradient(150deg, #ff00ff, #8a2be2, #00ffff);
-    background-size: 400% 400%;
-    animation: cinemática 15s ease infinite;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
     padding: 20px;
-    color: white;
 }
 
-@keyframes cinemática {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.main-wrapper { width: 100%; max-width: 450px; text-align: center; }
-
-.profile-img { 
-    width: 120px; height: 120px; border-radius: 50%; 
-    border: 4px solid var(--neon-pink);
-    box-shadow: 0 0 20px var(--neon-pink);
-    margin-bottom: 20px;
-}
-
-.card {
-    background: rgba(0, 0, 0, 0.4);
+/* Tarjeta contenedora principal (Glassmorphism) */
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    background: var(--card-bg);
+    padding: 40px 25px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(255, 133, 161, 0.2);
     backdrop-filter: blur(10px);
-    border: 2px solid var(--neon-blue);
-    border-radius: 50px;
-    padding: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.card:hover {
-    background: var(--neon-pink);
-    box-shadow: 0 0 15px var(--neon-pink);
+/* Foto de perfil circular animada */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 71, 126, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos y textos */
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    color: #3a2d34;
+}
+
+.bio {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.85;
+}
+
+/* Caja de botones en columna */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilos de botones estándar */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+    background: #ffffff;
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+/* Iconos dentro de los botones estándar */
+.link-btn i {
+    position: absolute;
+    left: 25px;
+    font-size: 1.25rem;
+    color: var(--accent-pink);
+    transition: color 0.3s ease;
+}
+
+/* Comportamiento hover (pasar el mouse por encima) */
+.link-btn:hover {
+    background: var(--accent-pink);
+    color: var(--btn-text);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 133, 161, 0.4);
+}
+
+.link-btn:hover i {
+    color: var(--btn-text);
+}
+
+/* Variación para el botón destacado de tu proyecto Git */
+.link-btn.featured {
+    background: var(--accent-pink);
+    color: var(--btn-text);
+    font-weight: 600;
+}
+
+.link-btn.featured i {
+    color: var(--btn-text);
+}
+
+.link-btn.featured:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 6px 22px rgba(255, 71, 126, 0.5);
+}
+
+/* Footer discreto */
+footer {
+    margin-top: 35px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+Estilo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odiseo Verastegui | Mis Links</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="perfil.jpg" alt="Odiseo Verastegui" class="profile-img">
+
+        <h1>Odiseo Verastegui</h1>
+        <p class="bio"> mi espacio digital </p>
+
+        <div class="links-container">
+            
+            <a href="file:///C:/Users/Alumno/Desktop/mis-Links-o0-main/index.html" target="_blank" class="link-btn featured">
+                <i class="fa-brands fa-github"></i> Mi Portafolio / Proyectos
+            </a>
+            <a href="https://odiiseo0.github.io/simulador-de-rosales/" target="_blank" class="link-btn featured">
+                <i class="fa-brands fa-github"></i> Mi simulador de rosales
+            </a>
+
+            <a href="https://www.instagram.com/odiseo0" target="_blank" class="link-btn">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://tiktok.com/@odiseo.0" target="_blank" class="link-btn">
+                <i class="fa-brands fa-tiktok"></i> TikTok 
+            </a>
+            <a href="https://www.tiktok.com/@gta6.vicecity" target="_blank" class="link-btn">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <a href="https://www.facebook.com/share/195sfwzkzP/?mibextid=wwXIfr" target="_blank" class="link-btn">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://pin.it/30i9ZjnSk" target="_blank" class="link-btn">
+                <i class="fa-brands fa-pinterest-p"></i> Pinterest
+            </a>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Odiseo Verastegui
+        </footer>
+    </div>
+
+</body>
+</html>
