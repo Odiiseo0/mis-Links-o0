@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    /* Cambiamos a esta fuente con estilo de máquina de escribir */
     font-family: 'Courier New', Courier, monospace;
     background-image: url('IMG_4532.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,8 +23,19 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 3px solid white;
+}
+
+.nombre-usuario {
+    color: white;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .boton {
@@ -33,11 +44,9 @@ body {
     color: black;
     padding: 15px;
     margin: 12px 0;
-    /* Ajustamos el borde para que sea menos circular */
     border-radius: 10px;
     text-decoration: none;
     font-weight: 800;
-    /* Convertimos el texto a mayúsculas para un estilo más fuerte */
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.3s;
@@ -49,9 +58,10 @@ body {
 }
 
 .separador {
-    color: black;
+    color: white;
     font-weight: bold;
     margin: 25px 0;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 0.9rem;
 }
