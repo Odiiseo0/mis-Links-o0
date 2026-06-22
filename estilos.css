@@ -38,23 +38,36 @@ body {
     font-weight: bold;
 }
 
+/* Botones con efecto Glassmorphism */
 .boton {
-    display: block;
-    background-color: white;
-    color: black;
-    padding: 15px;
+    display: flex; /* Cambiado a flex para alinear imagen y texto */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    color: white;
+    padding: 12px;
     margin: 12px 0;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 0.3s;
-    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .boton:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Estilo para las miniaturas dentro de los botones */
+.icono-boton {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 15px;
+    object-fit: cover; /* Asegura que la foto no se deforme */
 }
 
 .separador {
