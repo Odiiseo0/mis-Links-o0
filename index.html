@@ -3,67 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odiseo Verastegui | Mis Links</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-<style>
-    body { 
-        background: linear-gradient(150deg, #ff00ff, #8a2be2, #00ffff) !important; 
-        min-height: 100vh; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        color: white; 
-    }
-</style>
-
+    <title>o0ondisplay</title>
+    <style>
+        /* Estilos integrados para que no fallen */
+        body { 
+            background: linear-gradient(150deg, #ff00ff, #8a2be2, #00ffff) !important; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            font-family: 'Courier New', monospace;
+            color: white;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: 2px solid #00ffff;
+            border-radius: 50px;
+            padding: 15px 30px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .card:hover { background: #ff00ff; border-color: #ff00ff; }
+        .profile { width: 120px; height: 120px; border-radius: 50%; border: 4px solid #ff00ff; margin-bottom: 20px; }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="perfil.jpg" alt="Odiseo Verastegui" class="profile-img">
+    <img src="perfil.jpg" class="profile">
+    <h1>ODISEO VERASTEGUI</h1>
+    <p>o0ondisplay</p>
 
-        <h1>Odiseo Verastegui</h1>
-        <p class="bio"> mi espacio digital </p>
-
-        <div class="links-container">
-            
-            <a href="file:///C:/Users/Alumno/Desktop/mis-Links-o0-main/index.html" target="_blank" class="link-btn featured">
-                <i class="fa-brands fa-github"></i> Mi Portafolio / Proyectos
-            </a>
-            <a href="https://odiiseo0.github.io/simulador-de-rosales/" target="_blank" class="link-btn featured">
-                <i class="fa-brands fa-github"></i> Mi simulador de rosales
-            </a>
-
-            <a href="https://www.instagram.com/odiseo0" target="_blank" class="link-btn">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-
-            <a href="https://tiktok.com/@odiseo.0" target="_blank" class="link-btn">
-                <i class="fa-brands fa-tiktok"></i> TikTok 
-            </a>
-            <a href="https://www.tiktok.com/@gta6.vicecity" target="_blank" class="link-btn">
-                <i class="fa-brands fa-tiktok"></i> TikTok
-            </a>
-
-            <a href="https://www.facebook.com/share/195sfwzkzP/?mibextid=wwXIfr" target="_blank" class="link-btn">
-                <i class="fa-brands fa-facebook-f"></i> Facebook
-            </a>
-
-            <a href="https://pin.it/30i9ZjnSk" target="_blank" class="link-btn">
-                <i class="fa-brands fa-pinterest-p"></i> Pinterest
-            </a>
-
-        </div>
-
-        <footer>
-            &copy; 2026 Odiseo Verastegui
-        </footer>
+    <div style="margin-top: 30px; width: 100%;">
+        <a href="https://odiiseo0.github.io/simulador-de-rosales/" class="card">SIMULADOR DE ROSALES</a>
+        <a href="https://www.instagram.com/odiseo0" class="card">INSTAGRAM</a>
+        <a href="https://vt.tiktok.com/ZSQo15vgo/" class="card">VIDEO VIRAL</a>
     </div>
 
 </body>
