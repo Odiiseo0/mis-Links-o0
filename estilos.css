@@ -53,4 +53,23 @@ body {
 }
 
 .section-title { margin: 30px 0 15px 0; font-size: 0.8rem; opacity: 0.8; }
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--neon-pink);
+    transform: scale(1.2);
+}
 
