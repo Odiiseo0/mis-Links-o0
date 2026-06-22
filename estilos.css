@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('IMG_4532.jpeg'); /* Asegúrate de que el nombre sea exacto */
+    /* Cambiamos a esta fuente con estilo de máquina de escribir */
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('IMG_4532.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,11 +32,16 @@ body {
     background-color: white;
     color: black;
     padding: 15px;
-    margin: 10px 0;
-    border-radius: 25px;
+    margin: 12px 0;
+    /* Ajustamos el borde para que sea menos circular */
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 800;
+    /* Convertimos el texto a mayúsculas para un estilo más fuerte */
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: 0.3s;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .boton:hover {
@@ -45,6 +51,7 @@ body {
 .separador {
     color: black;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 25px 0;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
