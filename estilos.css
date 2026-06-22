@@ -179,15 +179,3 @@ Body {
     font-weight: bold;
     margin-top: 10px;
 }
-
-/* --- ANIMACIÓN DE FLOTACIÓN --- */
-.profile-card-pink {
-    animation: flotar 4s ease-in-out infinite;
-}
-
-@keyframes flotar {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); } /* Sube 10px */
-    100% { transform: translateY(0px); }
-}
-
