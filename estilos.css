@@ -1,36 +1,50 @@
 body {
     margin: 0;
     padding: 0;
-    /* Cambiamos a una fuente de tipo máquina de escribir */
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url('IMG_4532.jpeg');
+    font-family: Arial, sans-serif;
+    background-image: url('IMG_4532.jpeg'); /* Asegúrate de que el nombre sea exacto */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Esto hace que el fondo se quede fijo */
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.contenedor {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
 .boton {
     display: block;
-    background-color: #fdfaf6; /* Un tono un poco más cremoso como la foto */
+    background-color: white;
     color: black;
     padding: 15px;
-    margin: 12px 0;
-    border-radius: 15px; /* Menos redondeado para ese estilo */
+    margin: 10px 0;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* Para que se vea en mayúsculas como la ref */
-    letter-spacing: 1px;
-    border: 1px solid rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #f0f0f0;
 }
 
 .separador {
-    color: white; /* Cambié a blanco para que resalte sobre el fondo oscuro */
+    color: black;
     font-weight: bold;
-    margin: 25px 0;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
 }
