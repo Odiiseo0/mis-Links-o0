@@ -77,3 +77,22 @@ body {
     letter-spacing: 3px;
     font-size: 0.9rem;
 }
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los iconos */
+    margin-top: 30px;
+}
+
+.redes-sociales a img {
+    width: 30px; /* Tamaño del icono */
+    height: 30px;
+    filter: invert(1); /* Si tus iconos son negros y tu fondo es oscuro, esto los vuelve blancos */
+    transition: transform 0.3s;
+}
+
+.redes-sociales a img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
